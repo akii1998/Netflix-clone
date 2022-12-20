@@ -23,6 +23,7 @@ import {  createBrowserRouter ,RouterProvider } from "react-router-dom";
 
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScroolToTop/ScrollToTop";
 import Home from "./pages/Home";
 import NetflixShowPage from "./pages/NetflixShowPage";
 
@@ -40,6 +41,7 @@ const router=createBrowserRouter([
 function App() {
   return (
       <div className="App">
+      <ScrollToTop/>
         <RouterProvider router={router} />
         <Footer/>
       </div>
