@@ -22,6 +22,7 @@ import React from "react";
 import {  createBrowserRouter ,RouterProvider } from "react-router-dom";
 
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import NetflixShowPage from "./pages/NetflixShowPage";
 
@@ -40,6 +41,7 @@ function App() {
   return (
       <div className="App">
         <RouterProvider router={router} />
+        <Footer/>
       </div>
   );
 }
